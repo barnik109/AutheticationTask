@@ -1,0 +1,278 @@
+.create-account-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #E0E0E0;
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    background-color: #E0E0E0;
+
+}
+
+.icon-overlay {
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.Common {
+    width: 860px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.join-button,
+.sign-in-button {
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    margin: auto;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #E0E0E0;
+    color: #333;
+}
+
+.boundary {
+    border: 1px solid #F5F5F5;
+    ;
+    border-radius: 350px 350px 0 0;
+}
+
+.join-button.selected {
+    border-bottom: 2px solid #A95454;
+    border-radius: 0;
+}
+
+.sign-in-button.selected {
+    border-bottom: 2px solid #A95454;
+    border-radius: 0;
+}
+
+.button-separator {
+
+    color: #777;
+}
+
+.form-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.icon-container {
+    margin-top: 80px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#email {
+    width: 370px;
+    padding: 8px;
+    border: none;
+    color: #E0B51D;
+    margin-top: 50px;
+    background-color: #E0E0E0;
+    border-bottom: 1px solid gray;
+}
+
+#password {
+    width: 340px;
+    padding: 8px;
+    border: none;
+    color: #A95454;
+    margin-top: 25px;
+    background-color: #E0E0E0;
+    border-bottom: 1px solid gray;
+}
+
+#confirm-password {
+    width: 340px;
+    padding: 8px;
+    border: none;
+    color: #A95454;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: #E0E0E0;
+    border-bottom: 1px solid gray;
+}
+
+.show-password {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    width: 38%;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 60px;
+    border-radius: 30px;
+    background-color: #E0E0E0;
+    color: #1F1F1F;
+}
+
+.checkbox-group1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.checkbox-group2 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#checkbox1,
+#checkbox2 {
+    transform: scale(1.5);
+    margin-right: 10px;
+    border: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c2beb6;
+    
+}
+
+input[type="checkbox"]:checked+label:before {
+    background-color: #E0E0E0;
+}
+
+input[type="checkbox"]:checked+label:after {
+    content: url('../../public/Union.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+   
+}
+
+
+
+
+.forgot-password {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 25px !important;
+}
+
+.switch-auth-mode {
+    margin-right: 220px;
+    color: #777;
+    font-size: small;
+    cursor: pointer;
+}
+
+.privacy {
+    color: #777;
+    margin-top: 30px;
+}
+
+.privacy span {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #E0E0E0;
+        width: 100vw;
+    }
+
+    .create-account-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    #confirm-password {
+        width: 315px;
+    }
+
+    #password {
+        width: 315px;
+    }
+
+    .Common {
+        width: 100% !important;
+        height: 50%;
+        object-fit: cover;
+        padding-top: 90%;
+        position: relative;
+    }
+
+    .content-container {
+        width: 95%;
+        position: relative;
+        left: -10px;
+        padding: 20px;
+        height: 100%;
+        background-color: #E0E0E0;
+    }
+
+    .icon-overlay {
+        z-index: 5;
+        position: absolute;
+        margin-left: 70px;
+        top: -10px;
+        transform: translateX(-50%);
+    }
+
+    .icon-overlay img{
+        width: 100%;
+    }
+}
