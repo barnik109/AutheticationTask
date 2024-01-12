@@ -5,6 +5,7 @@ A backend assingnment task
 ## Preview
 
 ![App Screenshot](./public/1st.gif)
+
 ![App Screenshot](./public/2nd.gif)
 
 ## Run Locally
