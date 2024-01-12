@@ -41,6 +41,16 @@ One new terminal to start backend sever
   node server.js
 ```
 
+### Important
+
+```bash
+USER='<YOUR_EMAIL_ADDRESS>' //Sender's Email Address
+PASS='<PASSWORD>'  
+MONGODB_URI="mongodb+srv://<USER_NAME>:<PASSWORD@cluster0.5jym1l3.mongodb.net/?retryWrites=true&w=majority" 
+//Your Mongodb Connection URL
+```
+[Watch this to get password](https://youtu.be/tR3ZlwDBjD0?si=m_oO8UgznzodBcj9)
+
 ### Tech Stack
 
 **Client:** React
