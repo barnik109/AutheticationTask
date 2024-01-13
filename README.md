@@ -41,7 +41,7 @@ One new terminal to start backend sever
   node server.js
 ```
 
-### Important
+### Important (For .env file located in Backend folder)
 
 ```bash
 USER='<YOUR_EMAIL_ADDRESS>' //Sender's Email Address
